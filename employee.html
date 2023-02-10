@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee form</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: darkgray;
+        }
+
+        #theFather {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+
+        }
+
+        #employeeFieldset {
+            padding: 5vh;
+            display: flex;
+            flex-direction: row;
+            border: solid black 2px;
+            gap: 1rem;
+        }
+
+        .col {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #employeeFormSubmit{
+            padding: 2vh;
+            background-color: blue;
+            color: white;
+            border-radius: 1rem;
+            font-size: 1.5vw;
+            width: 100%;
+            transform: translateX(50%);
+        }
+
+        input {
+            padding: .5rem;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="theFather">
+        <br><br>
+        <h2>Employee Form</h2>
+        <br><br>
+        <form id="employeeForm">
+            <fieldset id="employeeFieldset">
+                <div class="col">
+                    <label for="fname" id="fnameLabel">First Name: </label>
+                    <input type="text" id="fname" placeholder="First Name" required>
+                    <br><br>
+                    <label for="lname" id="lnameLabel">Last Name: </label>
+                    <input type="text" id="lname" placeholder="Last Name" required>
+                    <br><br>
+                    <label for="age" id="ageLabel">Age: </label>
+                    <input type="number" id="age" placeholder="Age" required>
+                    <br><br>
+                    <label for="address" id="addressLabel">Address: </label>
+                    <input type="text" id="address" placeholder="Address" required>
+                    <br><br>
+                    <label for="city" id="cityLabel">City: </label>
+                    <input type="text" id="city" placeholder="City" required>
+                    <br><br>
+                    <label for="zip" id="zipLabel">Zip Code: </label>
+                    <input type="number" id="zip" placeholder="#####" required>
+                    <br><br>
+                    <button id="employeeFormSubmit">Submit</button>
+                </div>
+                <div class="col">
+                    <label for="state" id="stateLabel">State: </label>
+                    <input type="text" id="state" placeholder="State" required>
+                    <br><br>
+                    <label for="country" id="countryLabel">Country: </label>
+                    <input type="text" id="country" placeholder="Country" required>
+                    <br><br>
+                    <label for="title" id="titleLabel">Job Title: </label>
+                    <input type="text" id="title" placeholder="Job Title" required>
+                    <br><br>
+                    <label for="dept" id="deptLabel">Department: </label>
+                    <input type="text" id="dept" placeholder="Department" required>
+                    <br><br>
+                    <label for="salary" id="salaryLabel">Salary: </label>
+                    <input type="number" id="salary" placeholder="$#####" required>
+                    <br><br>
+                    <label for="years" id="yearsLabel">Years of Service: </label>
+                    <input type="number" id="years" placeholder="#" required>
+                    <br><br>
+                </div>
+            </fieldset>
+            <br><br>
+        </form>
+    </div>
+
+    <script src="employeeScript.js"></script>
+</body>
+
+</html>
